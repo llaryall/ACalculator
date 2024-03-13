@@ -1,5 +1,6 @@
-const res = document.getElementById("resault");
+const res = document.getElementById("result");
 isNewCalculation = true
+
 function addScreen(value){
   if(!isNewCalculation){
     res.value=''
@@ -9,16 +10,15 @@ function addScreen(value){
     res.value += value
   }
 }
+
 function calculate(result) {
   const calculated = new Function('return ' + result)();
   res.value=calculated;
   isNewCalculation = false
 }
-function clearv(){
- 
+
+function clear() {
   res.value=''
-  
-  
 }
 
 function toggleTheme() {
