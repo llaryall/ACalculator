@@ -17,7 +17,7 @@ function calculate(result) {
   isNewCalculation = false
 }
 
-function clear() {
+function clearScreen() {
   res.value=''
 }
 
