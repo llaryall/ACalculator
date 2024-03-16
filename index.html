@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <input class="result" type="text" placeholder="resault" id="resault" readonly>
+            <input class="result" type="text" id="result" readonly>
             <div class="numbers">
                 <input class="num" type="button" value="0" onclick="addScreen(0)">
                 <input class="num" type="button" value="1" onclick="addScreen(1)">
@@ -29,10 +29,10 @@
                 <input class="num" type="button" value="6" onclick="addScreen(6)">
                 <input class="num" type="button" value="9" onclick="addScreen(9)">
                 <input class="num" type="button" value="%" onclick="addScreen('%')">
-                <input class="num color" type="button" value="C" onclick="clearv()">
+                <input class="num color" type="button" value="C" onclick="clearScreen()">
                 <input class="num color" type="button" value="*" onclick="addScreen('*')">
                 <input class="num color" type="button" value="/" onclick="addScreen('/')">
-                <input class="wide-button" type="button" value="=" onclick="calculate(resault.value)">
+                <input class="wide-button" type="button" value="=" onclick="calculate(result.value)">
             </div>
         </div>
     </div>
